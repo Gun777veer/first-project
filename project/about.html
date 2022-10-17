@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>About</title>
+    <link rel="stylesheet" href="style1.css" />
+    <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script>
+    <script type="text/javascript">
+        $(window).on("load", function () {
+            $(".loader-container").fadeOut(1600);
+        });
+    </script>
+</head>
+<body>
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+    <button class="openChatBtn" onclick="openForm()">
+        <div class="tooltip">
+            Chat <span class="tooltiptext1">You can send in your suggestions and quirries</span>
+        </div>
+    </button>
+    <div class="openChat">
+        <form>
+            <h1>Chat</h1>
+
+            <label for="msg"><b>Message</b></label>
+<textarea placeholder="Type message.." name="msg" required></textarea>
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn close" onclick="closeForm()">
+                Close
+            </button>
+        </form>
+    </div>
+    <script>
+        document.querySelector(".openChatBtn").addEventListener("click", openForm);
+        document.querySelector(".close").addEventListener("click", closeForm);
+        function openForm() {
+            document.querySelector(".openChat").style.display = "block";
+        }
+        function closeForm() {
+            document.querySelector(".openChat").style.display = "none";
+        }
+    </script>
+
+    <nav>
+        <div class="logo">
+            <div class="tooltip">
+                <h4>The SoC</h4>
+                <span class="tooltiptext">School of creativity</span>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="soc.html" class="cool-links">Home</a></li>
+            <li><a href="Articales.html" class="cool-links"> <div class="tooltip">Articles<span class="tooltiptext">And Reviews</span></div></a></li>
+            <li><a href="art.html" class="cool-links">Art</a></li>
+            <li><a href="stories.html" class="cool-links">Stories</a></li>
+            <li><a href="#" class="cool-links">About</a></li>
+
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+    </nav>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><div class="tooltip">Top  <span class="tooltiptext1">go to the top of page</span></div></button>
+    <a href='index.html'>
+        <button id="myBtn1" title="Login"><div class="tooltip"> Login<span class="tooltiptext">Login/Sign up</span></div></button>
+    </a>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="perspective-text">
+        <div class="perspective-line">
+            <p id="pres"></p>
+            <p id="pres">OUR SKILLED</p>
+        </div>
+        <div class="perspective-line">
+            <p id="pres">OUR SKILLED</p>
+            <p id="pres">AND</p>
+        </div>
+        <div class="perspective-line">
+            <p id="pres">AND</p>
+            <p id="pres">CREATIVE</p>
+        </div>
+        <div class="perspective-line">
+            <p id="pres">CREATIVE</p>
+            <p id="pres">TEAM</p>
+        </div>
+        <div class="perspective-line">
+            <p id="pres">TEAM</p>
+            <p id="pres"></p>
+        </div>
+    </div>
+    <section>
+        <div class="reveal">
+            <div class="about-section">
+                <div class="tooltip">
+                    <h1>MEMBERS:</h1>
+                    <span class="tooltiptext">The creetors of the site</span>
+                </div>
+                <br />
+                <br />
+                <br />
+                <div class="column">
+                    <div class="card">
+                        <img src="images/g.jpg" alt="G" style="width:100%">
+                        <div class="container1">
+                            <h2>Gunveer Singh</h2>
+                            <p class="title">Memeber #1</p>
+                            <p>Awesome member of our team.</p>
+                            <p>
+                                gunveer0995@chitkara.edu.in
+                            </p>
+                            <p><button class="btng">Contact</button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="images/d.jpg" alt="John" style="width:100%">
+                        <div class="container1">
+                            <h2>Dhruv</h2>
+                            <p class="title">Memeber #2</p>
+                            <p>Awesome member of our team.</p>
+                            <p>dhruv0982@chitkara.edu.in</p>
+                            <p><button class="btng">Contact</button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="images/h2.jpeg" alt="John" style="width:100%">
+                        <div class="container1">
+                            <h2>Harveer</h2>
+                            <p class="title">Memeber #3</p>
+                            <p>Awesome member of our team.</p>
+                            <p>harveer0291  @chitkara.edu.in</p>
+                            <p><button class="btng">Contact</button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="images/h1.jpeg" alt="John" style="width:100%">
+                        <div class="container1">
+                            <h2>Harman</h2>
+                            <p class="title">Memeber #4</p>
+                            <p>Awesome member of our team.</p>
+                            <p>harman0999@chitkara.edu.in</p>
+                            <p><button class="btng">Contact</button></p>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+
+            </div>
+        </div>
+    </section>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="Script.js"></script>
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length; i++) {
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
+                else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+</body>
+</html>

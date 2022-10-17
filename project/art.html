@@ -1,0 +1,340 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Art</title>
+    <link rel="stylesheet" href="style1.css" />
+    <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script>
+    <script type="text/javascript">
+        $(window).on("load", function () {
+            $(".loader-container").fadeOut(1600);
+        });
+    </script>
+</head>
+<body>
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+    <button class="openChatBtn" onclick="openForm()">
+        <div class="tooltip">
+            Chat <span class="tooltiptext1">You can send in your suggestions and quirries</span>
+        </div>
+    </button>
+    <div class="openChat">
+        <form>
+            <h1>Chat</h1>
+
+            <label for="msg"><b>Message</b></label>
+<textarea placeholder="Type message.." name="msg" required></textarea>
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn close" onclick="closeForm()">
+                Close
+            </button>
+        </form>
+    </div>
+    <script>
+        document.querySelector(".openChatBtn").addEventListener("click", openForm);
+        document.querySelector(".close").addEventListener("click", closeForm);
+        function openForm() {
+            document.querySelector(".openChat").style.display = "block";
+        }
+        function closeForm() {
+            document.querySelector(".openChat").style.display = "none";
+        }
+    </script>
+
+    <nav>
+        <div class="logo">
+            <div class="tooltip">
+                <h4>The SoC</h4>
+                <span class="tooltiptext">School of creativity</span>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="soc.html" class="cool-links">Home</a></li>
+            <li><a href="Articales.html" class="cool-links"> <div class="tooltip">Articles<span class="tooltiptext">And Reviews</span></div></a></li>
+            <li><a href="#" class="cool-links">Art</a></li>
+            <li><a href="stories.html" class="cool-links">Stories</a></li>
+            <li><a href="about.html" class="cool-links">About</a></li>
+
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+    </nav>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><div class="tooltip">Top  <span class="tooltiptext1">go to the top of page</span></div></button>
+    <a href='index.html'>
+        <button id="myBtn1" title="Login"><div class="tooltip"> Login<span class="tooltiptext">Login/Sign up</span></div></button>
+    </a>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="slider">
+        <div class="slide active">
+            <img src="images/1.png" alt="">
+            <div class="info">
+                <h2>Comic conpect art</h2>
+                <p>Complete version of concept comic art.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="images/2.png" alt="">
+            <div class="info">
+                <h2>Sketch of comic</h2>
+                <p>Incomplete version of concept comic art.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="images/3.png" alt="">
+            <div class="info">
+                <h2>Bleach fan-art</h2>
+                <p>Bleach fan-art created on 20th anniversery of manga.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="images/g4.png" alt="">
+            <div class="info">
+                <h2>Concept character art</h2>
+                <p>Concept character art of the characters from my stories.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="images/g0.png" alt="">
+            <div class="info">
+                <h2>Concept character art</h2>
+                <p>Concept character art of the characters from my stories.</p>
+            </div>
+        </div>
+        <div class="navigation">
+            <i class="fas fa-chevron-left prev-btn"></i>
+            <i class="fas fa-chevron-right next-btn"></i>
+        </div>
+        <div class="navigation-visibility">
+            <div class="slide-icon active"></div>
+            <div class="slide-icon"></div>
+            <div class="slide-icon"></div>
+            <div class="slide-icon"></div>
+            <div class="slide-icon"></div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <section>
+        <div class="reveal">
+            <div class="about-section">
+                <div class="tooltip">
+                    <h1>Art</h1>
+                    <span class="tooltiptext">A gallery containing art</span>
+                </div>
+                <br />
+                <br />
+                <hr />
+                <br />
+                <br />
+                <h3 class="storyt">Completed: </h3>
+                <br />
+                <br />
+                <div class="gallery">
+                    <a href="images/1.png"><img src="images/1s.png" /></a>
+                    <a href="images/3.png"><img src="images/3s.png" /></a>
+                    <a href="images/4.png"><img src="images/4s.png" /></a>
+                </div>
+                <br />
+                <br />
+                <br />
+                <hr />
+                <br />
+                <br />
+                <h3 class="storyt">Sketches: </h3>
+                <div class="gallery">
+                    <a href="images/2.png"><img src="images/2s.png" /></a>
+                </div>
+                <br />
+                <br />
+                <script src="Script.js"></script>
+            </div>
+        </div>
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <script type="text/javascript">
+        const slider = document.querySelector(".slider");
+        const nextBtn = document.querySelector(".next-btn");
+        const prevBtn = document.querySelector(".prev-btn");
+        const slides = document.querySelectorAll(".slide");
+        const slideIcons = document.querySelectorAll(".slide-icon");
+        const numberOfSlides = slides.length;
+        var slideNumber = 0;
+
+        //image slider next button
+        nextBtn.addEventListener("click", () => {
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+            });
+            slideIcons.forEach((slideIcon) => {
+                slideIcon.classList.remove("active");
+            });
+
+            slideNumber++;
+
+            if (slideNumber > (numberOfSlides - 1)) {
+                slideNumber = 0;
+            }
+
+            slides[slideNumber].classList.add("active");
+            slideIcons[slideNumber].classList.add("active");
+        });
+
+        //image slider previous button
+        prevBtn.addEventListener("click", () => {
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+            });
+            slideIcons.forEach((slideIcon) => {
+                slideIcon.classList.remove("active");
+            });
+
+            slideNumber--;
+
+            if (slideNumber < 0) {
+                slideNumber = numberOfSlides - 1;
+            }
+
+            slides[slideNumber].classList.add("active");
+            slideIcons[slideNumber].classList.add("active");
+        });
+
+        //image slider autoplay
+        var playSlider;
+
+        var repeater = () => {
+            playSlider = setInterval(function () {
+                slides.forEach((slide) => {
+                    slide.classList.remove("active");
+                });
+                slideIcons.forEach((slideIcon) => {
+                    slideIcon.classList.remove("active");
+                });
+
+                slideNumber++;
+
+                if (slideNumber > (numberOfSlides - 1)) {
+                    slideNumber = 0;
+                }
+
+                slides[slideNumber].classList.add("active");
+                slideIcons[slideNumber].classList.add("active");
+            }, 4000);
+        }
+        repeater();
+
+        //stop the image slider autoplay on mouseover
+        slider.addEventListener("mouseover", () => {
+            clearInterval(playSlider);
+        });
+
+        //start the image slider autoplay again on mouseout
+        slider.addEventListener("mouseout", () => {
+            repeater();
+        });
+    </script>
+    <section>
+        <div class="reveal">
+            <div class="tooltip">
+                <h1>About this Page</h1>
+                <span class="tooltiptext">About the content of this page</span>
+            </div>
+            <h1>About this Page</h1>
+            <br />
+            <button type='button' class="button">Read</button>
+            <p id='m' class="story" style='display: none'>
+                <span>
+                    <br />
+                    Greetings dear reader, I thank you for stopping by and this page the information regarding content of this channel. <br />
+                </span>
+                <br />
+                <br />
+                <script>
+                    $(".button").click(function () {
+                        var text = $(".story").display;
+                        if ($('p.story').css('display') === 'none') {
+                            $(".story").slideToggle("slow");
+                        }
+                        else {
+                            $(".story").slideToggle("slow");
+                        }
+
+                    });
+                </script>
+        </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length; i++) {
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
+                else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Articles</title>
+    <link rel="stylesheet" href="style1.css" />
+    <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script>
+    <script type="text/javascript">
+        $(window).on("load", function () {
+            $(".loader-container").fadeOut(1600);
+        });
+    </script>
+</head>
+<body>
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+    <button class="openChatBtn" onclick="openForm()">
+        <div class="tooltip">
+            Chat <span class="tooltiptext1">You can send in your suggestions and quirries</span>
+        </div>
+    </button>
+    <div class="openChat">
+        <form>
+            <h1>Chat</h1>
+
+            <label for="msg"><b>Message</b></label>
+<textarea placeholder="Type message.." name="msg" required></textarea>
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn close" onclick="closeForm()">
+                Close
+            </button>
+        </form>
+    </div>
+    <script>
+        document.querySelector(".openChatBtn").addEventListener("click", openForm);
+        document.querySelector(".close").addEventListener("click", closeForm);
+        function openForm() {
+            document.querySelector(".openChat").style.display = "block";
+        }
+        function closeForm() {
+            document.querySelector(".openChat").style.display = "none";
+        }
+    </script>
+
+    <nav>
+        <div class="logo">
+            <div class="tooltip">
+                <h4>The SoC</h4>
+                <span class="tooltiptext">School of creativity</span>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="soc.html" class="cool-links">Home</a></li>
+            <li><a href="#" class="cool-links"> <div class="tooltip">Articles<span class="tooltiptext">And Reviews</span></div></a></li>
+            <li><a href="art.html" class="cool-links">Art</a></li>
+            <li><a href="stories.html" class="cool-links">Stories</a></li>
+            <li><a href="about.html" class="cool-links">About</a></li>
+
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+    </nav>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><div class="tooltip">Top  <span class="tooltiptext1">go to the top of page</span></div></button>
+    <a href='index.html'>
+        <button id="myBtn1" title="Login"><div class="tooltip"> Login<span class="tooltiptext">Login/Sign up</span></div></button>
+    </a>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="about-section">
+        <div class="tooltip">
+            <h1>Articales</h1>
+            <span class="tooltiptext">A section containing articales</span>
+        </div>
+        <hr />
+        <br />
+        <br />
+        <script src="Script.js"></script>
+        <h3 class="storyt">CAN READING AND WRITING LEAD US TO A BETTER LIFE: </h3>
+        <button type='button' class="button1">Read</button>
+        <p id='me1' class="story" style='display: none'>
+            <span>
+                <br />
+                Greetings dear reader, I thank you for stopping by and considering listening to what I have to say. Now I know that right now it might be really tempting to move on or saying that you will return again (the idea that will be buried under huge pile of other information vomited in your brain every moment) but just let me ask you that is your brain feeling overflowing, going on an auto drive mode, feeling emotionless, having a feeling of not doing enough or not doing anything at all? Are you feeling of having departed from the track of your intended life path by some invisible and undisputable force? Then I think that this might be helpful for you. If you have been here till now than I believe that you might be interested in having a piece of my mind, if not, I don’t think that you should waste anymore of your precious time than you already have. Those interested, might grab a cup of tea or coffee or whatever beverage you are into to enjoy yourself alongside with it. Now let’s talk business.<br />
+                <br />
+                The very first point that I want make here is that there are actual scientifically proven benefits of reading on our mind’s way of thinking, storing memory, reacting and concentrating. Resulting in a stronger and sharper mind, resulting in more creativity than ever before. Now I’m not going to waste your time explaining in overwhelming details the scientific details of reading, for that I’m going to link an article by someone of actual expert on the matter. Instead, what I am going to here is serve mine opinion on the table regarding the subject, based on my life experiences.<br /><br />
+                This age without a question is overflowing with information. There is flood of extra information that we don’t actually need, resulting our brain feeling heavy and tired. So, what is it that we do when a dam is overflowing with water? We open the flood gates, right? In our case we relax our mind by letting the information go. In other words, taking some time off by grabbing a book of your taste (fiction or non-fiction) with a beverage of your preference siting on a chair breathing in the air the around you or grab your laptop and start righting, anything, you can write about your day, your life, goals, strengths, weaknesses, there are endless possibilities. This relaxing effect of reading and writing is scientifically proven and here is a great article if you want to dive a bit deeper into it.<br /><br />
+                Remember that everyone in this world goes through some tough time in their lives and at the end of the we are all just human. So, it’s OKAY to relax your mind.<br />
+                <br />
+            </span>
+        </p>
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <section>
+        <div class="reveal">
+            <div class="about-section">
+                <div class="tooltip">
+                    <h1>Reviews</h1>
+                    <span class="tooltiptext">A section containing reviews of books</span>
+                </div>
+                <hr />
+                <br />
+                <br />
+                <div class='pics_in_a_row'>
+                    <div class='img1'>
+                        <div class="image-frame">
+                            <img src="images/book1.jpg" />
+                            <div class="image-caption">
+                                <h2>The lightning thielf</h2>
+                                Not the best the litrature has to offer but is certainly worth your time.
+                            </div>
+                        </div>
+                    </div>
+                    <div class='img2'>
+                        <div class="image-frame">
+                            <img src="images/book3.jpg" />
+                            <div class="image-caption">
+                                <h2>The Stand</h2>
+                                As best and influencle as a post-apoclyptice book can be.
+                            </div>
+                        </div>
+                    </div>
+                    <div class='img3'>
+                        <div class="image-frame">
+                            <img src="images/book4.jpg" />
+                            <div class="image-caption">
+                                <h2>Don Quixote</h2>
+                                This book certainly is once a lifetime read.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </div>
+        </div>
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <section>
+        <div class="reveal">
+            <div class="about-section">
+                <div class="tooltip">
+                    <h1>About this Page</h1>
+                    <span class="tooltiptext">About the content of this page</span>
+                </div>
+                <br />
+                <button type='button' class="button">Read</button>
+                <p id='m' class="story1" style='display: none'>
+                    <span>
+                        <br />
+                        Greetings dear reader, I thank you for stopping by and this page the information regarding content of this channel. <br />
+                    </span>
+                    <br />
+                    <br />
+                    <script>
+                        $(".button").click(function () {
+                            if ($('p.story1').css('display') === 'none') {
+                                $(".story1").slideToggle("slow");
+                            }
+                            else {
+                                $(".story1").slideToggle("slow");
+                            }
+
+                        });
+                        $(".button1").click(function () {
+                            if ($('p.story').css('display') === 'none') {
+                                $(".story").slideToggle("slow");
+                            }
+                            else {
+                                $(".story").slideToggle("slow");
+                            }
+
+                        });
+
+                        $(document).ready(function () {
+                            $('.image-frame').hover(function () {
+                                $('.image-caption', this).slideToggle('slow');
+                            }, function () {
+                                $('.image-caption', this).slideToggle('slow');
+                            });
+                        });
+                    </script>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length; i++) {
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
+                else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+</body>
+</html>
